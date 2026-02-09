@@ -11,6 +11,7 @@ A lightweight reminder addon for Frost Mages.
   There are no slash commands and no configuration options. The addon is intentionally simple and requires no setup.
 
 **Features**
+  
   Automatically detects Frost specialization
   Checks if the Water Elemental talent is selected
   Does not trigger if Lonely Winter is chosen
