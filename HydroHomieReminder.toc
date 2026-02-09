@@ -1,0 +1,7 @@
+## Interface: 120000
+## Title: HydroHomieReminder
+## Notes: Warns Frost Mages when Water Elemental is not summoned
+## Author: Pip
+## Version: 0.1
+
+HydroHomieReminder.lua
