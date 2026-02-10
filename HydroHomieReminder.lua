@@ -18,6 +18,12 @@ local C_Spell = C_Spell
 local IsPlayerSpell = IsPlayerSpell
 local SOUNDKIT = SOUNDKIT
 
+local IsMounted = IsMounted
+local IsFlying = IsFlying
+local IsFalling = IsFalling
+local UnitOnTaxi = UnitOnTaxi
+
+
 -- Constants
 local FROST_SPEC_ID = 64
 
@@ -74,6 +80,19 @@ local function ShouldWarn()
     if UnitHasVehicleUI("player") then
         return false
     end
+    
+    -- Don’t warn while on a flight path or flying on a mount.
+    -- Pets can temporarily despawn while airborne.
+    if UnitOnTaxi and UnitOnTaxi("player") then
+        return false
+    end
+
+    if IsMounted and IsMounted() then
+        if (IsFlying and IsFlying()) or (IsFalling and IsFalling()) then
+            return false
+        end
+    end
+
 
     -- If Lonely Winter is chosen, you should NOT have a pet -> no warning
     if SpellKnown(LONELY_WINTER_ID) then
