@@ -1,7 +1,13 @@
-## Interface: 120000
+## Interface: 120000, 120001
 ## Title: HydroHomieReminder
 ## Notes: Warns Frost Mages when Water Elemental is not summoned
 ## Author: Pip
-## Version: 0.1
+## Version: 1.0.1
+
+## X-License: Licensed under the MIT License. See the LICENSE file in the project root for details.
+## X-Website: https://github.com/Seems-Good/HydroHomieReminder
+## X-Curse-Project-ID: 1456950
+## X-Wago-ID: qGZO5XNd
+
 
 HydroHomieReminder.lua

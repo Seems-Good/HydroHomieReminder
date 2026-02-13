@@ -10,6 +10,11 @@ A lightweight reminder addon for Frost Mages.
   
   There are no slash commands and no configuration options. The addon is intentionally simple and requires no setup.
 
+**Install**
+
+  (Curseforge)[https://www.curseforge.com/wow/addons/hydro-homie-reminder/files/7592438]
+  (Wago.io)[https://addons.wago.io/addons/hydrohomiereminder]
+
 **Features**
   
   Automatically detects Frost specialization
